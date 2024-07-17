@@ -1,17 +1,15 @@
 package dev.anto;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import java.util.Arrays;
+import java.util.List;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        List<Integer> lista1 = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> lista2 = Arrays.asList(4, 5, 6, 7, 8);
+
+        List<Integer> elementosComunes = ElementosComunes.encontrarElementosComunes(lista1, lista2);
+
+        System.out.println("Elementos duplicados: " + elementosComunes);
     }
 }
